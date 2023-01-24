@@ -156,6 +156,7 @@ body {
 .titulo-secao {
     font-size: 1.2rem;
     font-weight: 700;
+    padding: 0 16px;
 }
 @media screen and (min-width: 1440px) {
     .principal {
@@ -177,6 +178,7 @@ body {
     display: none;
 }
 .cartao {
+    margin: 16px;
     width: 100%;
     border-radius: 15px;
     overflow: hidden;
@@ -366,97 +368,6 @@ body {
         grid-area: secao-produtos;
     }
     }
-
-/* Página Picos */
-@media screen and (min-width: 0px) and (max-width: 440px){
-    .secao-favoritos__picos{
-        display: none;
-    }        
-}
-@media screen and (min-width: 1440px) {
-
-    .principal__picos {
-        display: grid;
-        grid-template-areas: 
-            "titulo__picos titulo__picos titulo__picos titulo__picos"
-            "imagem__picos imagem__picos imagem__picos secao-favoritos__picos"
-            "secao-videos__picos secao-videos__picos secao-videos__picos secao-videos__picos"
-        ;
-    }
-    .titulo__picos {
-        grid-area: titulo__picos;
-    }
-    .imagem__picos {
-        grid-area: imagem__picos;
-    }
-    .secao-favoritos__picos{
-        grid-area: secao-favoritos__picos;
-    }
-    .secao-videos__picos {
-        display: flex;
-        justify-content: space-between;
-    }
-    .secao-videos__picos {
-        grid-area: secao-videos__picos;
-    }
-    .cartao {
-        overflow: visible;
-    }
-    .secao-pag2 {
-        display: flex;
-        flex-direction: column;
-
-    }
-    .cartao__picos {
-        width: 32px;
-        height: 38px;
-    }
-}
-.cartao__conteudo--picos {
-    padding: 16px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-        "cp__picos cp__picos"
-        "ct__picos ct__picos"
-        "ci__picos cb__picos"
-    ;
-    gap: 8px;
-}
-.cp__picos {
-    grid-area: cp__picos;
-}
-.ct__picos {
-    grid-area: ct__picos;
-}
-.ci__picos {
-    grid-area: ci__picos;
-}
-.cb__picos {
-    grid-area: cb__picos;
-}
-.titulo-secao-pico {
-    grid-row: 2;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-}
-.cartao__pico__botao--play::before {
-    content: "\e908";
-    font-size: 24px;
-}
-.espaco {
-    margin-bottom: 32px;
-}
-.titulo__espaco {
-    margin-bottom: 8px;
-}
-.imagem__picos {
-    display: flex;
-    width: 985px;
-    left: -102px;
-}
 
 /* Página Pico */
 
